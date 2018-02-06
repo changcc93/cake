@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.images{
+		position: relative;
+		widows: 307px;
+		height:192px;}
+	.images img{position: absolute;}
+	.images .mask{
+		position: absolute;
+		background-color: rgba(0,0,0,0);
+		width: 0px;
+		height: 192px;
+		z-index: 9999;
+		transition: all .5s;
+		text-align: center;
+		line-height: 192px;
+		color: rgba(0,0,0,0);
+
+	}
+
+	.images:hover .mask{
+		background-color: rgba(0,0,0,0.8);
+		width: 307px;
+	}
+	images a {
+		color: rgba(0,0,0,0);
+		transition: all .3s;
+		position: absolute;
+		top: 0
+		right:0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		display: block;
+		font-family: Consolas;
+		text-decoration: none;
+		font-size: 1.4em;
+
+	}
+	.images:hover a{color: rgba(255,255,255,1);}
+	</style>
+</head>
+<body>
+	<div class=images>
+		<img src="images/cake.jpg" width="307" height="192">
+			<div class="mask">
+				<a href="#">WOW</a>
+			</div>
+	</div>
+</body>
+</html>

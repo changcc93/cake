@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.images{
+		position: relative;
+		widows: 307px;
+		height:192px;}
+	.images img{position: absolute;}
+	.images .mask{
+		position: absolute;
+		background-color: rgba(0,0,0,0);
+		width: 307px;
+		height: 192px;
+		z-index: 9999;
+		transition: all .3s;
+		text-align: center;
+		line-height: 192px;
+		color: rgba(0,0,0,0);
+
+	}
+
+	.images:hover .mask{
+		background-color: rgba(0,0,0,0.8);
+	}
+	</style>
+</head>
+<body>
+	<div class=images>
+		<img src="images/cake.jpg" width="307" height="192">
+			<div class="mask">
+				<a href="#">WOW</a>
+			</div>
+	</div>
+</body>
+</html>
